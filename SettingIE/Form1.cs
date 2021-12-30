@@ -26,7 +26,7 @@ namespace SettingIE
             //设置代理IP和端口 
             rk.SetValue("ProxyServer", this.IP.Text.ToString() + ":" + this.Duankou.Text.ToString());
             rk.Close();
-            MessageBox.Show("成功","系统消息",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("设置代理成功","系统消息",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace SettingIE
             //设置代理不可用 
             rk.SetValue("ProxyEnable", 0);
             rk.Close();
-            MessageBox.Show("成功", "系统消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("取消代理成功", "系统消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
